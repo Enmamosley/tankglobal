@@ -35,17 +35,17 @@ If URL is '/' (home page), assign ID as 'home'
       navId = url.replace("/", "");
     }
 
-    let es = document.getElementById(navId);
+    let /es = document.getElementById(navId);
 
-    if (es) {
-      es.classList.remove(
+    if (/es) {
+      /es.classList.remove(
         "text-neutral-600",
         "dark:text-neutral-400",
         "hover:text-neutral-500",
         "dark:hover:text-neutral-500"
       );
-      es.classList.add("text-orange-400", "dark:text-orange-300");
-      es.setAttribute("aria-current", "page");
+      /es.classList.add("text-orange-400", "dark:text-orange-300");
+      /es.setAttribute("aria-current", "page");
     }
   });
 </script>
