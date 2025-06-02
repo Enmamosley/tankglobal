@@ -7,39 +7,28 @@ import ClientsSection from "@components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
-import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
-import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
+import heroImage from "@images/hero-tanques.avif";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
-import pricing from "@data/pricing.json";
-import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
+import featureImage from "@images/tanques.avif";
+import construction from "@images/card1.avif";
+import tools from "@images/card2.avif";
+import dashboard from "@images/card3.avif";
 import { partnersData } from "@/data_files/constants";
 
-const avatarSrcs: Array<string> = [
-  "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-];
 ---
-
 <MainLayout>
 
   <HeroSection
     title=`Tank Global<span
-        class="text-yellow-500 dark:text-yellow-400"> Solutions</span>`
+        class="text-blue-500 dark:text-blue-400"> Solutions</span>`
     subTitle="Solving all your tank needs. Over 20 years delivering reliable and innovative ISO tank solutions. We are your strategic partner for operations, sales, leasing, and specialized consulting."
     primaryBtn="Start Exploring"
-    primaryBtnURL="/products"
+    primaryBtnURL="/services"
     secondaryBtn="Contact Us"
     secondaryBtnURL="/contact"
     withReview={true}
-    avatars={avatarSrcs}
     rating=`<span class="font-bold">4.8</span> / 5`
     starCount={4}
     reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
@@ -62,7 +51,7 @@ const avatarSrcs: Array<string> = [
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">Tank Global Solutions</span> offerings to perfectly suit your ISO tank logistics and project needs.`
+    title=`Customize <span class="text-blue-500 dark:text-blue-400">Tank Global Solutions</span> offerings to perfectly suit your ISO tank logistics and project needs.`
     tabs={[
       {
         heading: "Specialized Expertise",
@@ -70,7 +59,7 @@ const avatarSrcs: Array<string> = [
           "Rely on over 20 years of experience in ISO tank solutions. Our team of industry experts ensures precision, compliance, and efficiency in every project we handle.",
         svg: "tools",
         src: tools,
-        alt: "Yellow and black heavy equipment on brown grass field",
+        alt: "blue and black heavy equipment on brown grass field",
         first: true,
       },
       {

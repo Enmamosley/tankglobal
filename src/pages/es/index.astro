@@ -9,42 +9,30 @@ import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
-import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
+import heroImage from "@images/hero-tanques.avif";
 import faqs from "@data/es/faqs.json";
 import features from "@data/es/features.json";
 import pricing from "@data/es/pricing.json";
-import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
+import featureImage from "@images/tanques.avif";
+import construction from "@images/card1.avif";
+import tools from "@images/card2.avif";
+import dashboard from "@images/card3.avif";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { partnersData } from "@/data_files/constants";
 
-const avatarSrcs: Array<string> = [
-  "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-];
 ---
 
 <MainLayout lang="es">
-  <AnnouncementBanner
-    btnId="dismiss-button"
-    btnTitle="Découvrez ScrewFast sur GitHub"
-    url="https://github.com/mearashadowfax/ScrewFast"
-  />
 
   <HeroSection
-    title=`Équipez vos projets avec <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Outils matériels de haute qualité et services de construction experts pour tous les besoins en projet."
-    primaryBtn="Commencez à explorer"
-    primaryBtnURL={getRelativeLocaleUrl("es", "products")}
-    secondaryBtn="Contacter l'équipe commerciale"
+    title=`Tank Global<span
+        class="text-blue-500 dark:text-blue-400"> Solutions</span>`
+    subTitle="Solving all your tank needs. Más de 20 años brindando soluciones confiables e innovadoras para el manejo de tanques ISO. Somos tu aliado estratégico para operaciones, ventas, arrendamiento y consultoría especializada."
+    primaryBtn="Empieza a explorar"
+    primaryBtnURL={getRelativeLocaleUrl("es", "services")}
+    secondaryBtn="Contactenos"
     secondaryBtnURL={getRelativeLocaleUrl("es", "contact")}
     withReview={true}
-    avatars={avatarSrcs}
     rating=`<span class="font-bold">4.8</span> / 5`
     starCount={4}
     reviews=`À partir de plus de <span class="font-bold">12,8k</span> avis`
@@ -53,44 +41,44 @@ const avatarSrcs: Array<string> = [
   />
 
   <ClientsSection
-    title="Faites confiance aux leaders de l'industrie"
-    subTitle="Découvrez la fiabilité choisie par les géants de l'industrie."
-    partners={partnersData}
+    title="Con la confianza de los líderes de la industria"
+    subTitle="Descubra la confiabilidad elegida por los gigantes de la industria."
+    partners={partnersData }
   />
 
   <FeaturesGeneral
-    title="Répondre aux exigences de l'industrie"
-    subTitle="Chez ScrewFast, nous relevons les défis uniques rencontrés dans les secteurs du matériel et de la construction. Des outils de pointe aux services experts, nous sommes déterminés à vous aider à surmonter les obstacles et à atteindre vos objectifs."
+    title="Nuestra Filosofía"
+    subTitle="En Tank Global Solutions, estamos comprometidos con aportar valor real a nuestros clientes a través de soluciones de tanques ISO diseñadas con precisión, eficiencia y visión a futuro. Nuestra misión es simple: convertirnos en la fuente de referencia de soluciones especializadas que superen expectativas y garanticen tranquilidad."
     src={featureImage}
-    alt="Produits ScrewFast dans des boîtes flottantes"
+    alt="products in floating boxes"
     features={features}
   />
 
   <FeaturesNavs
-    title=`Personnalisez les offres de <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span> pour répondre parfaitement à vos besoins en matériel et en construction.`
+    title=`Personaliza las soluciones de  <span class="text-blue-500 dark:text-blue-400">Tank Global Solutions </span>para adaptarlas perfectamente a tus necesidades logísticas y de proyectos con tanques ISO.`
     tabs={[
       {
-        heading: "Outils de pointe",
+        heading: "Experiencia Especializada",
         content:
-          "Optimisez vos projets avec les outils de pointe de ScrewFast. Faites l'expérience d'une efficacité accrue dans la gestion de la construction avec nos solutions automatisées sophistiquées.",
+          "Confía en más de 20 años de experiencia en soluciones con tanques ISO. Nuestro equipo experto garantiza precisión, cumplimiento y eficiencia en cada proyecto.",
         svg: "tools",
         src: tools,
         alt: "Équipement lourd jaune et noir sur un champ d'herbe brune",
         first: true,
       },
       {
-        heading: "Tableaux de bord intuitifs",
+        heading: "Gestión Inteligente de Proyectos",
         content:
-          "Naviguez facilement avec les tableaux de bord intuitifs de ScrewFast. Configurez et supervisez vos projets de manière transparente, avec des interfaces conviviales conçues pour une gestion efficace des flux de travail rapide et efficace.",
+          "Mantén el control con nuestros flujos de trabajo eficientes y la gestión proactiva de flotas, adaptados a las exigencias logísticas del sector de tanques ISO.",
         svg: "dashboard",
         src: dashboard,
         alt: "Capture d'écran ou représentation graphique du tableau de bord intuitif",
         second: true,
       },
       {
-        heading: "Fonctionnalités robustes",
+        heading: "Soluciones Integrales",
         content:
-          "Minimisez la complexité, maximisez la productivité. Les fonctionnalités robustes de ScrewFast sont conçues pour rationaliser votre processus de construction, offrant des résultats qui se distinguent par leur excellence.",
+          "Desde la consultoría hasta la entrega del equipo, ofrecemos una gama completa de servicios. Puedes contar con nosotros para una ejecución confiable y un soporte duradero.",
         svg: "house",
         src: construction,
         alt: "Structure métallique grise d'un bâtiment près d'une grue à tour pendant la journée",
@@ -99,49 +87,42 @@ const avatarSrcs: Array<string> = [
   />
 
   <TestimonialsSection
-    title="Accélérez vos projets"
-    subTitle="Chez ScrewFast, nous assurons un démarrage rapide avec une configuration de compte instantanée. Découvrez la vitesse de la construction redéfinie."
+    title="Nuestras Oficinas"
+    subTitle="Tank Global Solutions tiene presencia internacional con oficinas estratégicamente ubicadas en América, Europa y Asia para atender mejor a nuestros clientes globales:"
     testimonials={[
       {
         content:
-          "ScrewFast a considérablement augmenté l'efficacité de notre projet. La configuration a été instantanée et leurs temps de réponse rapides sont phénoménaux. Vraiment un changement de jeu dans le support matériel et de construction !",
+          "Nuestra red internacional nos permite brindar soluciones eficientes y personalizadas a nivel global, siempre con un enfoque local y cercano al cliente.",
         author: "Samantha Ruiz",
-        role: "Directrice des opérations | ConstructIt Inc.",
+        role: "Directora de Proyectos",
         avatarSrc:
           "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
       },
     ]}
     statistics={[
       {
-        count: "70k+",
+        count: "América",
         description:
-          "clients équipés — des bricoleurs aux grandes entreprises de construction",
+          "🇺🇸 Estados Unidos (US) 🇲🇽 México (MX) 🇬🇹 Guatemala (GT) 🇪🇨 Ecuador (EC)",
       },
       {
-        count: "35%",
+        count: "Europa",
         description:
-          "hausse de l'efficacité des projets avec les outils et services de ScrewFast",
+          "🇳🇱 Países Bajos (NL)",
       },
       {
-        count: "15,3%",
+        count: "Asia",
         description:
-          "réduction des coûts de maintenance rapportée par des clients à long terme",
-      },
-      {
-        count: "2x",
-        description:
-          "assemblage plus rapide grâce à des solutions de fixation innovantes",
+          "🇨🇳 China (CH) 🇯🇵 Japón (JP)",
       },
     ]}
   />
 
-  <PricingSection pricing={pricing} />
-
-  <FAQ title="Questions<br />fréquemment posées" faqs={faqs} />
+  <FAQ title="Preguntas<br />Frecuentes" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Construisons ensemble"
-    subTitle="ScrewFast est un modèle open source, méticuleusement conçu avec les frameworks Astro, Tailwind CSS et Preline UI."
-    url="https://github.com/mearashadowfax/ScrewFast"
+    title="Solicitar una cotización"
+    subTitle="20 Years solving all your tank needs..."
+    url="/contact"
   />
 </MainLayout>
