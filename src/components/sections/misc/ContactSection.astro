@@ -39,18 +39,18 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
         </h2>
         <!-- Form for user input with various input fields.-->
         <!-- Each field utilizes a different input component for the specific type of input (text, email, phone, and textarea)-->
-        <form>
+        <form action="https://formspree.io/f/mzzgejwq" method="POST">
           <div class="grid gap-4">
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <TextInput
                 id="hs-firstname-contacts"
                 label="First Name"
-                name="hs-firstname-contacts"
+                name="firstname"
               />
               <TextInput
                 id="hs-lastname-contacts"
                 label="Last Name"
-                name="hs-firstname-contacts"
+                name="lastname"
               />
             </div>
             <EmailContactInput id="hs-email-contacts" />
@@ -58,14 +58,12 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
             <TextAreaInput
               id="hs-about-contacts"
               label="Details"
-              name="hs-about-contacts"
+              name="details"
             />
           </div>
-
           <div class="mt-4 grid">
             <AuthBtn title="Send Message" />
           </div>
-
           <div class="mt-3 text-center">
             <p class="text-sm text-neutral-600 dark:text-neutral-400">
               {formSubTitle}
@@ -77,41 +75,19 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
         <ContactIconBlock
-          heading="Knowledgebase"
-          content="Browse through all of our knowledgebase articles."
-          isLinkVisible={true}
-          linkTitle="Visit guides & tutorials"
-          linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="question" />
-        </ContactIconBlock>
-
-        <ContactIconBlock
-          heading="FAQ"
-          content="Explore our FAQ for quick, clear answers to common queries."
-          isLinkVisible={true}
-          linkTitle="Visit FAQ"
-          linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="chatBubble" />
-        </ContactIconBlock>
-
-        <ContactIconBlock
           heading="Visit our office"
-          content="UK screwfast"
+          content="Tank Global Solutions"
           isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
-          ><Icon name="mapPin" />
-        </ContactIconBlock>
+          addressContent="Román Marín 1900 Col. Benito Juárez Norte Coatzacoalcos, Veracruz, México"
+        ><Icon name="mapPin" /></ContactIconBlock>
 
         <ContactIconBlock
           heading="Contact us by email"
           content="Prefer the written word? Drop us an email at"
           isLinkVisible={true}
-          linkTitle="support@screwfast.uk"
+          linkTitle="contact@tankglobalsolutions.com"
           linkURL="#"
-          ><Icon name="envelopeOpen" />
-        </ContactIconBlock>
+        ><Icon name="envelopeOpen" /></ContactIconBlock>
       </div>
     </div>
   </div>

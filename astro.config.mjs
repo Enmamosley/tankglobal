@@ -7,7 +7,7 @@ import starlight from "@astrojs/starlight";
 import mdx from "@astrojs/mdx";
 
 export default defineConfig({
-  site: "https://screwfast.uk",
+  site: "https://tankglobalsolutions.com",
   image: {
     domains: ["images.unsplash.com"],
   },

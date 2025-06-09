@@ -36,66 +36,84 @@ interface Article {
 const articles: Article[] = [
   {
     isRightSection: true,
-    title: "Delivering Expert Guidance",
+    title: "Comprehensive ISO Tank Services",
     subTitle:
-      "Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
+      "We provide end-to-end ISO tank solutions including logistics, cleaning, maintenance, and compliance oversight. Our operations are tailored to ensure your tank systems run efficiently and meet international standards.",
     single: false,
     imgOne: blueprints,
-    imgOneAlt: "Blueprints and digital tablet with construction plans.",
+    imgOneAlt: "ISO tank blueprint planning",
     imgTwo: personWorking,
-    imgTwoAlt: "Person working in the office",
+    imgTwoAlt: "Specialist managing ISO tank operations",
   },
   {
     isRightSection: false,
-    title: "Transforming Designs into Reality",
+    title: "Fleet Management & Maintenance",
     subTitle:
-      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, screwfast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
+      "Our fleet management services include real-time tracking, preventive maintenance, and asset optimization. Whether managing a single tank or a large-scale operation, we maximize performance and extend equipment lifespan.",
     img: beforeAfter,
-    imgAlt: "Construction site before and after",
+    imgAlt: "Before and after of managed ISO tank fleet",
     btnExists: true,
-    btnTitle: "Learn More",
-    btnURL: "#",
+    btnTitle: "Contact Us",
+    btnURL: "#contact",
   },
   {
     isRightSection: true,
-    title: "Navigating Projects with Professional Oversight",
+    title: "Sales & Leasing Solutions",
     subTitle:
-      "Effective project management is at the heart of any successful build. screwfast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
+      "We offer flexible purchasing and leasing options on a wide range of ISO tanks, including standard liquid, gas, and cryogenic models. Our global inventory ensures fast delivery and customized options to suit your needs.",
     single: false,
     imgOne: constructionWorkers,
-    imgOneAlt: "Construction workers orchestrating a project",
+    imgOneAlt: "Leased ISO tanks being delivered",
     imgTwo: aerialView,
-    imgTwoAlt: "Aerial view of managed construction",
+    imgTwoAlt: "Aerial view of tank storage facility",
   },
   {
     isRightSection: false,
-    title: "Ensuring Long-lasting Performance",
+    title: "Spare Parts & Technical Support",
     subTitle:
-      "Our commitment to your project doesn't end at completion. screwfast offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
+      "Get access to a full catalog of certified spare parts and accessories. Backed by technical experts, we help minimize downtime and keep your ISO tank operations running smoothly.",
     img: usingTools,
-    imgAlt:
-      "Man in orange and black vest wearing white helmet holding yellow and black power tool",
+    imgAlt: "Technician assembling ISO tank components",
   },
   {
     isRightSection: true,
-    title: "Crafting Bespoke Strategies for Unique Challenges",
+    title: "Consulting & Custom Projects",
     subTitle:
-      "For our larger enterprise clients, screwfast offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
+      "Our expert team offers tailored consulting services and project planning for cryogenic, chemical, or energy-related tank operations. From feasibility studies to full execution—we design with precision and scalability in mind.",
     single: false,
     imgOne: progressBuilding,
-    imgOneAlt: "In progress building structure",
+    imgOneAlt: "Custom ISO tank project under design",
     imgTwo: underConstruction,
-    imgTwoAlt: "Brown and gray building under construction",
+    imgTwoAlt: "Modular tank construction in progress",
     btnExists: true,
-    btnTitle: "Read more",
+    btnTitle: "Read More",
     btnURL: "#",
+  },
+  {
+    isRightSection: false,
+    title: "Tank Types & Equipment",
+    subTitle: ` 
+    Standard Liquid Tanks: Food grade, Chemicals, Mining, Fuels.
+    Gas Tanks: Refrigerants, LPG, Pharmaceuticals.
+    Cryogenic Tanks: CO₂ (Food & Beverage), Ethane (Oil & Gas), O₂ (Medical), Nitrogen (Mining), Argon (Electronics), Natural Gas (Energy).
+    Available Equipment:
+    - 20’ Cryogenic Tank
+    - 40’ Cryogenic Tank
+    - 20’ Asphalt Container
+    - 40’ Asphalt Tank
+    - 20’ Standard Tank
+    - 20’ Gas Tank
+    `,
+    img: aerialView,
+    imgAlt: "Different types of ISO tanks in storage",
   },
 ];
 
+
 const pageTitle: string = `Services | ${SITE.title}`;
 const metaDescription =
-  "Uniting expertise with your vision, screwfast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.";
-const ogTitle = "Expert Consultation Services | screwfast";
+  "At Tank Global Solutions, we provide a full suite of ISO tank services designed to support every phase of your operations. From sales and leasing to full-scale fleet management and project consulting, our solutions are reliable, efficient, and tailored to each industry’s demands.";
+const ogTitle = "Expert Services | At Tank Global Solutions,";
 ---
 
 <MainLayout
@@ -105,17 +123,17 @@ const ogTitle = "Expert Consultation Services | screwfast";
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    url: "https://screwfast.uk/services",
-    name: "Expert Consultation Services | screwfast",
+    "@id": "https://tankglobalsolutions.com/services",
+    url: "https://tankglobalsolutions.com/services",
+    name: "Expert Services |  At Tank Global Solutions",
     description:
-      "Uniting expertise with your vision, screwfast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+      "At Tank Global Solutions, we provide a full suite of ISO tank services designed to support every phase of your operations. From sales and leasing to full-scale fleet management and project consulting, our solutions are reliable, efficient, and tailored to each industry’s demands.",
     isPartOf: {
       "@type": "WebSite",
-      url: "https://screwfast.uk",
-      name: "screwfast",
+      url: "https://tankglobalsolutions.com/",
+      name: "Tank Global Solutions",
       description:
-        "screwfast offers top-tier hardware tools and expert construction services to meet all your project needs.",
+        "Tank Global Solutions offers top-tier hardware tools and expert construction services to meet all your project needs.",
     },
     inLanguage: "en-US",
   }}
@@ -123,10 +141,10 @@ const ogTitle = "Expert Consultation Services | screwfast";
   {/* MainSection is the introductory section of the page, it also contains a CTA button */}
   <MainSection
     title="Uniting Expertise with Your Vision"
-    subTitle="At screwfast, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
+    subTitle="At Tank Global Solutions, we provide a full suite of ISO tank services designed to support every phase of your operations. From sales and leasing to full-scale fleet management and project consulting, our solutions are reliable, efficient, and tailored to each industry’s demands."
     btnExists={true}
     btnTitle="Schedule a Consultation"
-    btnURL="#"
+    btnURL="/contact"
   />
   {/* RightSection and LeftSection contain details about various services along with pertinent imagery.
   They alternate for variety in design.
@@ -164,25 +182,3 @@ const ogTitle = "Expert Consultation Services | screwfast";
       );
     })
   }
-  {/* FeaturesStats section showcases essential stats valuable to users */}
-  <FeaturesStats
-    title="By the Numbers"
-    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At screwfast, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last."
-    mainStatTitle="96%"
-    mainStatSubTitle="of our clients rate their experience with screwfast as exceptional"
-    stats={[
-      {
-        stat: "99.8%",
-        description: "project completion rate",
-      },
-      {
-        stat: "5,000+",
-        description: "successful installations",
-      },
-      {
-        stat: "85%",
-        description: "client growth year-over-year",
-      },
-    ]}
-  />
-</MainLayout>

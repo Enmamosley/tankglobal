@@ -3,12 +3,12 @@ import ogImageSrc from "/src/images/social.png";
 
 
 export const SITE = {
-  title: "screwfast",
-  tagline: "Top-quality Hardware Tools",
-  description: "screwfast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short: "screwfast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-  url: "https://screwfast.uk",
-  author: "Emil Gulamov",
+  title: "Tank Global Solutions",
+  tagline: "Solving all your tank needs",
+  description: "Reliable and innovative ISO tank solutions",
+  description_short: "Reliable and innovative ISO tank solutions",
+  url: "http://tankglobalsolutions.com/",
+  author: "Enmanoell Mosley",
 };
 
 export const SEO = {
@@ -35,8 +35,8 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
-  description: "Equip your projects with screwfast's top-quality hardware tools and expert construction services. Trusted by industry leaders, screwfast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
+  title: `${SITE.title}: : Tank ISO Solutions`,
+  description: "Reliable and innovative ISO tank solutions!",
   image: ogImageSrc,
 };
 

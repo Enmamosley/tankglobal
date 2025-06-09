@@ -1,5 +1,5 @@
 ---
-// Import the necessary dependencies.
+// Importa las dependencias necesarias.
 import AuthBtn from "@components/ui/buttons/AuthBtn.astro";
 import ContactIconBlock from "@components/ui/blocks/ContactIconBlock.astro";
 import TextInput from "@components/ui/forms/input/TextInput.astro";
@@ -8,16 +8,15 @@ import PhoneInput from "@components/ui/forms/input/PhoneInput.astro";
 import TextAreaInput from "@components/ui/forms/input/TextAreaInput.astro";
 import Icon from "@components/ui/icons/Icon.astro";
 
-// Define the variables that will be used in this component
-const title: string = "Contactez-nous";
+// Define las variables que se usarán en este componente
+const title: string = "Contáctanos";
 const subTitle: string =
-  "Vous avez des questions ou souhaitez discuter d'un projet ? Contactez-nous et laissons-nous élaborer la solution parfaite avec nos outils et services.";
-const formTitle: string = "Remplissez le formulaire ci-dessous";
-const formSubTitle: string =
-  "Nous vous répondrons dans un délai de 1 à 2 jours ouvrables.";
+  "¿Tienes preguntas o quieres hablar sobre un proyecto? Contáctanos y juntos crearemos la solución perfecta con nuestras herramientas y servicios.";
+const formTitle: string = "Completa el siguiente formulario";
+const formSubTitle: string = "Te responderemos en 1 o 2 días hábiles.";
 ---
 
-<!-- Contact Us -->
+<!-- Contacto -->
 <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
   <div class="mx-auto max-w-2xl lg:max-w-5xl">
     <div class="text-center">
@@ -38,35 +37,32 @@ const formSubTitle: string =
         >
           {formTitle}
         </h2>
-        <!-- Form for user input with various input fields.-->
-        <!-- Each field utilizes a different input component for the specific type of input (text, email, phone, and textarea)-->
-        <form>
+        <!-- Formulario para que el usuario ingrese datos -->
+        <form action="https://formspree.io/f/mzzgejwq" method="POST">
           <div class="grid gap-4">
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <TextInput
                 id="hs-firstname-contacts"
-                label="Prénom"
-                name="hs-firstname-contacts"
+                label="Nombre"
+                name="firstname"
               />
               <TextInput
                 id="hs-lastname-contacts"
-                label="Nom"
-                name="hs-firstname-contacts"
+                label="Apellido"
+                name="lastname"
               />
             </div>
             <EmailContactInput id="hs-email-contacts" />
             <PhoneInput id="hs-phone-number" />
             <TextAreaInput
               id="hs-about-contacts"
-              label="Détails"
-              name="hs-about-contacts"
+              label="Detalles"
+              name="details"
             />
           </div>
-
           <div class="mt-4 grid">
-            <AuthBtn title="Envoyer un message" />
+            <AuthBtn title="Enviar mensaje" />
           </div>
-
           <div class="mt-3 text-center">
             <p class="text-sm text-neutral-600 dark:text-neutral-400">
               {formSubTitle}
@@ -75,44 +71,22 @@ const formSubTitle: string =
         </form>
       </div>
 
-      <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
+      <!--ContactIconBlocks muestran los diferentes métodos de contacto, incluyendo visitar la oficina, email, etc.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
         <ContactIconBlock
-          heading="Base de connaissances"
-          content="Parcourez tous nos articles de base de connaissances."
-          isLinkVisible={true}
-          linkTitle="Visiter les guides et tutoriels"
-          linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="question" />
-        </ContactIconBlock>
-
-        <ContactIconBlock
-          heading="FAQ"
-          content="Explorez notre FAQ pour des réponses rapides et claires aux questions courantes."
-          isLinkVisible={true}
-          linkTitle="Visiter la FAQ"
-          linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="chatBubble" />
-        </ContactIconBlock>
-
-        <ContactIconBlock
-          heading="Visitez notre bureau"
-          content="screwfast UK"
+          heading="Visita nuestra oficina"
+          content="Tank Global Solutions"
           isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
-          ><Icon name="mapPin" />
-        </ContactIconBlock>
+          addressContent="Román Marín 1900 Col. Benito Juárez Norte Coatzacoalcos, Veracruz, México"
+        ><Icon name="mapPin" /></ContactIconBlock>
 
         <ContactIconBlock
-          heading="Contactez-nous par e-mail"
-          content="Préférez-vous le texte écrit ? Envoyez-nous un e-mail à"
+          heading="Contáctanos por correo electrónico"
+          content="¿Prefieres escribir? Envíanos un email a"
           isLinkVisible={true}
-          linkTitle="support@screwfast.uk"
+          linkTitle="contact@tankglobalsolutions.com"
           linkURL="#"
-          ><Icon name="envelopeOpen" />
-        </ContactIconBlock>
+        ><Icon name="envelopeOpen" /></ContactIconBlock>
       </div>
     </div>
   </div>
