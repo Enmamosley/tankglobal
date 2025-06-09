@@ -4,17 +4,17 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import MainSection from "@components/ui/blocks/MainSection.astro";
 import LeftSection from "@components/ui/blocks/LeftSection.astro";
 import RightSection from "@components/ui/blocks/RightSection.astro";
-import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
+
 
 // Import necessary images
-import blueprints from "@images/blueprints-image.avif";
-import personWorking from "@images/person-working.avif";
-import beforeAfter from "@images/before-after.avif";
-import constructionWorkers from "@images/construction-workers.avif";
-import aerialView from "@images/aerial-view.avif";
-import usingTools from "@images/using-tools.avif";
-import progressBuilding from "@images/progress-building.avif";
-import underConstruction from "@images/under-construction.avif";
+import blueprints from "@images/a2.avif";
+import personWorking from "@images/a8.avif";
+import beforeAfter from "@images/a3.avif";
+import constructionWorkers from "@images/a4.avif";
+import aerialView from "@images/a5.avif";
+import usingTools from "@images/a2.avif";
+import progressBuilding from "@images/a6.avif";
+import underConstruction from "@images/a7.avif";
 import { SITE } from "@data/constants";
 
 interface Article {
@@ -52,9 +52,6 @@ const articles: Article[] = [
       "Our fleet management services include real-time tracking, preventive maintenance, and asset optimization. Whether managing a single tank or a large-scale operation, we maximize performance and extend equipment lifespan.",
     img: beforeAfter,
     imgAlt: "Before and after of managed ISO tank fleet",
-    btnExists: true,
-    btnTitle: "Contact Us",
-    btnURL: "#contact",
   },
   {
     isRightSection: true,
@@ -85,9 +82,6 @@ const articles: Article[] = [
     imgOneAlt: "Custom ISO tank project under design",
     imgTwo: underConstruction,
     imgTwoAlt: "Modular tank construction in progress",
-    btnExists: true,
-    btnTitle: "Read More",
-    btnURL: "#",
   },
   {
     isRightSection: false,
